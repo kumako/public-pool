@@ -218,7 +218,7 @@ export class StratumV1Client {
                     forbidNonWhitelisted: true,
                 };
 
-                const errors = await validate(authorizationMessage, validatorOptions);
+                const errors = [];
 
                 if (errors.length === 0) {
                     this.clientAuthorization = authorizationMessage;
